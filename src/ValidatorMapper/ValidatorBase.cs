@@ -6,7 +6,23 @@ public abstract class ValidatorBase<T> where T : notnull
 
     public ValidationResult Validate(T value)
     {
-        throw new NotImplementedException();
+        ValidationResult validationResult = new();
+
+        foreach (var rule in this.rules)
+        {
+            string? result = rule.Key.Invoke(value);
+
+            if (result is null)
+            {
+                rule.Value?.Invoke(value);
+
+                continue;
+            }
+
+            validationResult.AddError(result);
+        }
+
+        return validationResult;
     }
 
     protected void AddRule(ValidationDelegate<T> validation, MapperDelegate<T>? mapping = null)
