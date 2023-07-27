@@ -5,7 +5,14 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidatorMapper", "ValidatorMapper\ValidatorMapper.csproj", "{64CAA5CF-B64F-41D2-980D-C2D387F022C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidatorMapper.Tests", "ValidatorMapper.Tests\ValidatorMapper.Tests.csproj", "{FBE5B6A4-5991-4453-8623-0CB04EA1DF1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidatorMapper.Tests", "ValidatorMapper.Tests\ValidatorMapper.Tests.csproj", "{FBE5B6A4-5991-4453-8623-0CB04EA1DF1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C38A51CE-489E-4180-8717-93075B4895AA}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE.md = ..\LICENSE.md
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
